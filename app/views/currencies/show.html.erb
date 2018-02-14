@@ -1,1 +1,7 @@
 <h1>Values of Cryptocurrencies</h1>
+<a href="<%= currency_path('Bitcoin') %>" role="button" class="btn btn-primary">Bitcoin</a>
+<a href="<%= currency_path('Ethereum') %>" role="button" class="btn btn-primary">Ethereum</a>
+<a href="<%= currency_path('Nasdaq') %>" role="button" class="btn btn-primary">Nasdaq</a>
+
+
+<%= link_to_if(params[:id], "Graph of #{params[:id]}", "https://en.wikipedia.org/wiki/#{params[:id]}") %>
